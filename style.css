@@ -1,13 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    color: white;
+    background: black;
 }
 
 .header-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
+    align-items: center;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 10px;
+    padding-top: 20px;
 }
 
 #navlinks {
@@ -33,25 +39,23 @@ ul li a {
     padding-left: 20px;
 }
 
-body {
-    background: url(img/piano.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
 .main {
     font-family: 'Cookie', cursive;
     text-align: center;
     font-size: 50px;
     font-style: italic;
-    background: rgba(255, 166, 0, 0.767);
-    height: 200px;
-    margin:100px 0 110px 0;
+    color: white;
+    height: 250px;
     padding: 50px;
+    /* margin-bottom: 30px; */
+}
+
+.header-container, .main {
+    background: url(img/piano.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .name {
@@ -60,14 +64,15 @@ body {
 
 #symphonies, #concertos, #sonatas, #string {
     width: 70px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .achievements {
-    background: rgba(255, 166, 0, 0.767);
+    background: rgba(252, 169, 61, 0.658);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-flow: row wrap;
     width: 100%;
     color: black;
 }
@@ -79,7 +84,9 @@ body {
 
 .why {
     font-family: 'Cookie', cursive;
-    font-size: 100px;
+    color: white;
+    font-style: italic;
+    font-size: 50px;
     text-align: center;
     padding: 50px;
 }
